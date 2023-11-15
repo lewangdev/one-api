@@ -83,6 +83,14 @@ type ImageRequest struct {
 	Size   string `json:"size"`
 }
 
+type AudioSpeechRequest struct {
+	Model          string  `json:"model"`
+	Input          string  `json:"input"`
+	Voice          string  `json:"voice"`
+	ResponseFormat string  `json:"response_format"`
+	Speed          float64 `json:"speed"`
+}
+
 type AudioResponse struct {
 	Text string `json:"text,omitempty"`
 }
